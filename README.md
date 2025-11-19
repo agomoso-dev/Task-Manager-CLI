@@ -1,6 +1,7 @@
-# TaskManager
 
-A simple console-based Task Manager application built in Java. It allows users to create, list, update, and delete tasks with due dates and status management.
+# Task-Manager-CLI
+
+A simple console-based Task Manager application built in Java. It allows users to create, list, update, and delete tasks with due dates, status management, and task categories.
 
 ---
 
@@ -10,6 +11,7 @@ A simple console-based Task Manager application built in Java. It allows users t
 * Assign unique IDs automatically
 * Validate task states (`pending`, `do` or `done`)
 * Manage due dates with proper validation (`YYYY-MM-DD`)
+* Assign categories to tasks and manage categories
 * Console-based user interface
 
 ---
@@ -26,8 +28,8 @@ A simple console-based Task Manager application built in Java. It allows users t
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/agomosodev/TaskManager.git
-cd TaskManager
+git clone https://github.com/agomosodev/Task-Manager-CLI.git
+cd Task-Manager-CLI
 ```
 
 2. **Compile the project**
@@ -54,10 +56,14 @@ java -cp out io.github.agomosodev.TaskManagerApp
  2. List Tasks
  3. Update Task
  4. Delete Task
- 5. Exit
+ 5. Add Category
+ 6. List Categories
+ 7. Exit
 ============================
 Choose an option:
 ```
+
+* You can now assign a category to each task. If a category does not exist, the program will prompt you to enter a valid one.
 
 ---
 
@@ -73,6 +79,7 @@ java -version
 
   * Task state (`pending`, `do` or `done`)
   * Date format (`YYYY-MM-DD`)
+  * Task category (must exist in the list)
 
 ---
 
